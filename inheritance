@@ -1,0 +1,34 @@
+class A
+{
+  int i,j;
+  void show_ij()
+  {
+      System.out.println("value of i is:"+i);
+      System.out.println("value of j is:"+j);
+  }
+}
+class B extends A
+{
+    int k;
+    void show_k()
+    {
+       System.out.println("value of k is:"+k);
+    }
+    void sum()
+    {
+       System.out.println("sum of i,j and k is:"+(i+j+k));
+    }
+}
+class InheritanceDemo
+{
+     public static void main(String args[])
+     {
+        B ob=new B();
+        ob.i=10;
+        ob.j=20;
+        ob.k=30;
+        ob.show_ij();
+        ob.show_k();
+        ob.sum();
+    }
+} 
