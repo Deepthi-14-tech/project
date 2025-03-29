@@ -1,0 +1,54 @@
+interface Stack
+{
+     void push(int item);
+     int pop();
+}
+class Mystack implements Stack
+{
+      int S[ ];
+      int top;
+      Mystack(int size)
+      {
+         S=new int[size];
+         top=-1;
+      }
+      public void push(int item)
+      {
+         if (top==S.lengh-1)
+         {
+              System.out.println("STACK OVERFLOW");
+         }
+      
+         else
+        {
+             s[++top]=item;
+        }
+      }
+      public int pop()
+      {   
+          if (top=-1)
+          {
+            System.out.println("STACK UNDERFLOW");
+            return 0;
+          }
+          else
+       	  { 
+               return S[top--];
+          }
+     }
+}
+class StackDemo
+{
+       public static void main(String args[])
+       {
+          Mystack S1=new Mystack(5);
+          S1.push(10);
+          S1.push(20);
+          S1.push(30);
+          S1.push(40);
+          S1.push(50);
+          
+          System.out.println("Deleted element is :"+s.pop());
+       }
+}
+       
